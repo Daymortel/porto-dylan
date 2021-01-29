@@ -1,0 +1,180 @@
+/* Initialisation*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/fond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+html{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Réutilisables*/
+.row{
+    width: 80%;
+    margin: auto;
+}
+
+/*Titres*/
+h1,
+h2,
+h3,
+p,
+a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*Header*/
+header{
+    height: 100px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    background: #999999;
+    position: fixed;
+}
+
+label.logo{
+    font-size: 35px;
+    padding: 0 100px;
+    line-height: 80px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a{
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    border-bottom: 1px solid #00ffff;
+    transition: .5s;
+}
+
+nav #icon{
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Main*/
+.temps{
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffff90;
+    text-align: center;
+}
+
+#date{
+    font-size: 500%;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 2%;
+    transform: translate(-50%);
+}
+  
+#heure_exacte{
+    font-size: 500%;
+    position: relative;
+    margin-left: 50%;
+    margin-top: 2%;
+    transform: translate(-50%);
+}
+
+.box{
+    width: 80%;
+    border: 2px solid #ffffff;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 5%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.light{
+    background-color: #555555;
+}
+
+.dark{
+    background-color: #222222;
+}
+
+h2{
+    border-bottom: 1px solid #00ffff;
+    padding-bottom: 5px;
+}
+
+h3{
+    padding-top: 10px;
+}
+
+p,
+a{
+    padding-top: 10px;
+}
+
+/*Footer*/
+footer{
+    background-color: #111111;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.social{
+    float: left;
+    margin-top: 35px;
+    margin-left: 40px;
+}
+
+.copy{
+    float: right;
+    margin-top: 35px;
+    margin-right: 40px;
+}
+
+.social i{
+    font-size: 200%;
+}
+
+.ion-social-facebook{
+    padding-right: 40px;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+}
+
+.ion-social-instagram:hover{
+    color: #7232bd;
+}
