@@ -4,13 +4,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
-    background-image: url(../img/fond.jpg);
+    /*background-image: url(../img/fond.gif);*/
+    background-color: #dddddd;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 100%;
+}
+
+body.dark{
+    background-color: #222222;
+}
+
+.binaire{
+    position: fixed;
+    top: -1vh;
+    transform: translateY(0);
+    animation: fall 3s linear;
+}
+
+@keyframes fall{
+    to{
+        transform: translateY(105vh);
+    }
 }
 
 html{
@@ -36,14 +55,15 @@ a{
 
 /*Header*/
 header{
-    height: 100px;
+    height: 5vw;
 }
 
 nav{
     height: 80px;
     width: 100%;
-    background: #999999;
+    background: #111533;
     position: fixed;
+    z-index: 2;
 }
 
 label.logo{
@@ -65,7 +85,8 @@ nav li{
     line-height: 80px;
 }
 
-nav a{
+nav a,
+nav li label{
     color: #ffffff;
     font-size: 18px;
     text-transform: uppercase;
@@ -73,7 +94,7 @@ nav a{
     text-decoration: none;
 }
 
-a:hover{
+header a:hover{
     border-bottom: 1px solid #00ffff;
     transition: .5s;
 }
@@ -91,8 +112,10 @@ nav #icon{
 /*Main*/
 .temps{
     font-family: 'Orbitron', sans-serif;
-    color: #00ffff90;
+    color: #008b8b90;
     text-align: center;
+    margin-top: 20%;
+    z-index: 1;
 }
 
 #date{
@@ -144,11 +167,133 @@ a{
     padding-top: 10px;
 }
 
+/*Modal*/
+.show-modal-1{
+    cursor: pointer;
+}
+
+.show-modal-2{
+    cursor: pointer;
+}
+
+.show-modal-3{
+    cursor: pointer;
+}
+
+.show-modal-4{
+    cursor: pointer;
+}
+  
+.close-modal-1{
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.close-modal-2{
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.close-modal-3{
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.close-modal-4{
+    position: absolute;
+    top: -1rem;
+    right: 0.5rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.hidden{
+    display: none;
+}
+  
+.modal-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.modal-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.modal-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.modal-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+  
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
 /*Footer*/
 footer{
-    background-color: #111111;
-    height: 100px;
-    margin-top: 40px;
+    background-color: #111533;
+    height: 5vw;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 
 .social{

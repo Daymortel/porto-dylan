@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
     <script src="vendors/js/jquery-3.5.1.js"></script>
-    <script src="js/script.js"></script>
     <link rel="shortcut icon" href="img/avatar.jpg" type="image/x-icon">
     <title>Dylan BABONNEAU</title>
 </head>
@@ -19,10 +18,11 @@
         <nav>
             <label class="logo">Dylan</label>
             <ul id="menu">
-                <li><a href="#contacts">Contacts</a></li>
-                <li><a href="#qualifications">Qualifications</a></li>
-                <li><a href="#connaissances">Connaissances</a></li>
-                <li><a href="#projets">Projets</a></li>
+                <li><input type="checkbox" name="darkmode" id="darkmode"><label for="darkmode">Dark Mode</label></li>
+                <li class="show-modal-1"><a href="#contacts">Contacts</a></li>
+                <li class="show-modal-2"><a href="#qualifications">Qualifications</a></li>
+                <li class="show-modal-3"><a href="#connaissances">Connaissances</a></li>
+                <li class="show-modal-4"><a href="#projets">Projets</a></li>
             </ul>
             <label id="icon">
                 <i class="ion-navicon-round"></i>
@@ -31,16 +31,19 @@
     </header>
     <main>
         <section id="contacts">
-            <div class="box light">
+            <div class="box light modal-1 hidden">
+                <button class="close-modal-1">&times;</button>
                 <h2>Contacts</h2>
                 <p>6 rue de la Butte aux Alouettes</p>
                 <p>22690 Pleudihen sur Rance</p>
                 <p>0625846588</p>
                 <p><a href="mailto:dylanbab22@live.fr">dylanbab22@live.fr</a></p>
             </div>
+            <div class="overlay hidden"></div>
         </section>
         <section id="qualifications">
-            <div class="box dark">
+            <div class="box dark modal-2 hidden">
+                <button class="close-modal-2">&times;</button>
                 <h2>Qualifications</h2>
                 <h3>2020-2021</h3>
                 <p>IMTS, Tremplin vers le numérique</p>
@@ -48,9 +51,11 @@
                 <p>Diplôme National du Brevet<br>
                 avec mention bien</p>
             </div>
+            <div class="overlay hidden"></div>
         </section>
         <section id="connaissances">
-            <div class="box light">
+            <div class="box light modal-3 hidden">
+                <button class="close-modal-3">&times;</button>
                 <h2>Connaissances</h2>
                 <h3>Languages de programmation</h3>
                 <p>- C</p>
@@ -59,14 +64,17 @@
                 <p>- CSS</p>
                 <p>- JavaScript</p>
             </div>
+            <div class="overlay hidden"></div>
         </section>
         <section id="projets">
-            <div class="box dark">
+            <div class="box dark modal-4 hidden">
+                <button class="close-modal-4">&times;</button>
                 <h2>Projets</h2>
                 <h3>Projets C/Python</h3>
                 <p><a href="https://github.com/Daymortel/keylogger-gui" target="blanck">Faux générateur de points boutiques</a></p>
                 <p><a href="https://github.com/Daymortel/money" target="blanck">GUI calculant la monnaie à rendre</a></p>
             </div>
+            <div class="overlay hidden"></div>
         </section>
         <div class="temps">
             <div id="date"></div>
@@ -80,5 +88,6 @@
         </div>
         <p class="copy">Copyright &copy; 2021 by Dylan BABONNEAU. All right reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
