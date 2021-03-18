@@ -39,23 +39,29 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1080px){
     footer{
-        height: 200px;
+        height: 300px;
         text-align: center;
         padding-top: 20px;
     }
 
     .social{
         float: none;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 
     .copy{
         float: none;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 
     .temps{
-        font-size: 50%;
+        float: none;
+        margin-left: 50%;
+        transform: translate(-50%);
     }
 
     .modal-1{

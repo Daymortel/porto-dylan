@@ -115,24 +115,24 @@ nav #icon{
     font-family: 'Orbitron', sans-serif;
     color: #008b8b90;
     text-align: center;
-    margin-top: 20%;
+    float: left;
+    margin-top: 15px;
+    margin-left: 140px;
     z-index: 1;
 }
 
 #date{
-    font-size: 500%;
+    font-size: 150%;
     position: relative;
-    margin-left: 50%;
+    margin-left: 2%;
     margin-top: 2%;
-    transform: translate(-50%);
 }
   
 #heure_exacte{
-    font-size: 500%;
+    font-size: 150%;
     position: relative;
-    margin-left: 50%;
+    margin-left: 2%;
     margin-top: 2%;
-    transform: translate(-50%);
 }
 
 .box{
