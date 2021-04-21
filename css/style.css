@@ -6,7 +6,10 @@
 }
 
 body{
-    background-image: url(../img/jour.jpg);
+    background-image: /*url(../img/jour.jpg)*/ linear-gradient(
+        to right,
+        #fff, #eee, #ddd, #ccc, #bbb, #aaa, #999, #888
+    );
     /*background-color: #dddddd;*/
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +19,10 @@ body{
 }
 
 body.dark{
-    background-image: url(../img/nuit.jpg);
+    background-image: /*url(../img/nuit.jpg)*/ linear-gradient(
+        to right,
+        #000, #111, #222, #333, #444, #555, #666, #777
+    );
     /*background-color: #222222;*/
 }
 
@@ -284,7 +290,6 @@ a{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(3px);
     z-index: 5;
 }
 
@@ -303,10 +308,12 @@ footer{
     margin-left: 40px;
 }
 
-.copy{
+#copy{
+    color: #ffffff;
     float: right;
     margin-top: 35px;
     margin-right: 40px;
+    text-transform: uppercase;
 }
 
 .social i{
