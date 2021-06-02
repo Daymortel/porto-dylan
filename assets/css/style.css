@@ -193,7 +193,11 @@ footer{
 }
 
 .ion-social-facebook{
-    padding-right: 40px;
+    padding-right: 20px;
+}
+
+.ion-social-instagram{
+	padding-left: 20px;
 }
 
 .ion-social-facebook:hover{
