@@ -80,7 +80,8 @@ li label:hover{
     transition: .5s;
 }
 
-label a:hover{
+label a:hover,
+.social a:hover{
     border: none;
 }
 
