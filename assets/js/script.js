@@ -12,8 +12,15 @@ function affichZero(nombre) {
 }
 function dateEtHeure() {
     const infos = new Date();
+    document.getElementById('copy').innerHTML = 'Copyright &copy; ' + affichZero(infos.getFullYear()) + ' by Dylan BABONNEAU. All right reserved.';
     document.getElementById('date').innerHTML = affichZero(infos.getDate()) + '/' + affichZero(infos.getMonth() + 1) + '/' + infos.getFullYear();
     document.getElementById('heure_exacte').innerHTML = affichZero(infos.getHours()) + ':' + affichZero(infos.getMinutes())+ ':' + affichZero(infos.getSeconds());
 }
 setInterval("dateEtHeure()");
 var heure = new Date().getHours();
+
+const darkMode = document.getElementById('darkmode');
+
+darkMode.addEventListener('change', (e) => {
+    document.body.classList.toggle('dark', e.target.checked);
+});

@@ -7,18 +7,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/queries.css">
     <script src="vendors/js/jquery-3.5.1.js"></script>
-    <script src="js/script.js"></script>
     <link rel="shortcut icon" href="img/avatar.jpg" type="image/x-icon">
     <title>Dylan BABONNEAU</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
-            <label class="logo">Dylan</label>
+            <label class="logo"><a href="#header"><img src="assets/img/avatar.jpg" alt="Avatar"></a></label>
             <ul id="menu">
+                <li><input type="checkbox" name="darkmode" id="darkmode"><label for="darkmode">Dark Mode</label></li>
                 <li><a href="#contacts">Contacts</a></li>
                 <li><a href="#qualifications">Qualifications</a></li>
                 <li><a href="#connaissances">Connaissances</a></li>
@@ -28,6 +28,10 @@
                 <i class="ion-navicon-round"></i>
             </label>
         </nav>
+        <div class="name">
+            <p>Dylan</p>
+            <p>BABONNEAU</p>
+        </div>
     </header>
     <main>
         <section id="contacts">
@@ -68,17 +72,18 @@
                 <p><a href="https://github.com/Daymortel/money" target="blanck">GUI calculant la monnaie à rendre</a></p>
             </div>
         </section>
-        <div class="temps">
-            <div id="date"></div>
-            <div id="heure_exacte"></div>
-        </div>
     </main>
     <footer>
         <div class="social">
             <a href="https://www.facebook.com/dylan.babonneau/" target="blanck"><i class="ion-social-facebook"></i></a>
             <a href="https://www.instagram.com/dylan.babonneau/" target="blanck"><i class="ion-social-instagram"></i></a>
         </div>
-        <p class="copy">Copyright &copy; 2021 by Dylan BABONNEAU. All right reserved.</p>
+        <div class="temps">
+            <div id="date"></div>
+            <div id="heure_exacte"></div>
+        </div>
+        <div id="copy"></div>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
