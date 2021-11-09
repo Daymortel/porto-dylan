@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/queries.css">
     <link rel="shortcut icon" href="assets/img/avatar.jpg" type="image/x-icon">
     <script src="vendors/js/jquery-3.5.1.js"></script>
-    <title>Dylan BABONNEAU - Accueil</title>
+    <title>Dylan BABONNEAU - Me contacter</title>
 </head>
 <body>
     <header id="header">
@@ -19,10 +20,10 @@
             <label class="logo"><a href="#header"><img src="assets/img/avatar.jpg" alt="Avatar"></a></label>
             <ul id="menu">
                 <li><input class="check" type="checkbox" name="darkmode" id="darkmode"><label for="darkmode">Dark Mode</label></li>
-                <!--<li><a href="#contacts">Contacts</a></li>-->
-                <li><a href="#qualifications">Qualifications</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <!--<li><a href="#qualifications">Qualifications</a></li>
                 <li><a href="#connaissances">Connaissances</a></li>
-                <li><a href="#projets">Projets</a></li>
+                <li><a href="#projets">Projets</a></li>-->
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="contact-me.html">Me contacter</a></li>
             </ul>
@@ -36,44 +37,23 @@
         </div>
     </header>
     <main>
-        <!--<section id="contacts">
+        <section id="contacts">
             <div class="box light">
                 <h2>Contacts</h2>
-                <p>6 rue de la Butte aux Alouettes</p>
-                <p>22690 Pleudihen sur Rance</p>
-                <p>0625846588</p>
-                <p><a href="mailto:dylanbab22@live.fr">dylanbab22@live.fr</a></p>
-            </div>
-        </section>-->
-        <section id="qualifications">
-            <div class="box dark">
-                <h2>Qualifications</h2>
-                <h3>2021-2022</h3>
-                <p>IMTS, Développeur Back-end</p>
-                <h3>2020-2021</h3>
-                <p>IMTS, Tremplin vers le numérique</p>
-                <h3>2013</h3>
-                <p>Diplôme National du Brevet<br>
-                avec mention bien</p>
-            </div>
-        </section>
-        <section id="connaissances">
-            <div class="box light">
-                <h2>Connaissances</h2>
-                <h3>Langages de programmation</h3>
-                <p>- C</p>
-                <p>- Python</p>
-                <p>- HTML</p>
-                <p>- CSS</p>
-                <p>- JavaScript</p>
-            </div>
-        </section>
-        <section id="projets">
-            <div class="box dark">
-                <h2>Projets</h2>
-                <h3>Projets C/Python</h3>
-                <p><a href="https://github.com/Daymortel/keylogger-gui" target="blanck">Faux générateur de points boutiques</a></p>
-                <p><a href="https://github.com/Daymortel/money" target="blanck">GUI calculant la monnaie à rendre</a></p>
+                <form name="contact" action="contact-envoi" method="post" class="contact" onsubmit="">
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Nom" required>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                        <select name="select" id="select">
+                            <option value="front-end">Front-end</option>
+                            <option value="back-end">Back-end</option>
+                            <option value="full-stack">Full-stack</option>
+                        </select>
+                        <input type="text" name="title" id="title" placeholder="Titre" required>
+                        <textarea name="message" id="message" placeholder="Message" required></textarea>
+                        <input type="submit" class="submit" value="Envoyer">
+                    </div>
+                </form>
             </div>
         </section>
     </main>

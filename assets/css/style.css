@@ -4,8 +4,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-body.dark{
+
+.dark{
     background-color: #000000;
+}
+
+.dark:hover{
+    transition: .5s;
 }
 
 html{
@@ -42,7 +47,7 @@ header{
 nav{
     height: 80px;
     width: 100%;
-    background: #ffffff;
+    background-color: #999999;
     position: fixed;
     z-index: 1;
 }
@@ -66,7 +71,7 @@ nav li{
 
 nav a,
 nav li label{
-    color: #999999;
+    color: #dddddd;
     font-size: 18px;
     text-transform: uppercase;
     padding: 7px 10px;
@@ -85,12 +90,12 @@ label a:hover,
     border: none;
 }
 
-input{
+.check{
     display: none;
 }
 
 nav #icon{
-    color: #999999;
+    color: #dddddd;
     font-size: 30px;
     line-height: 80px;
     float: right;
@@ -165,6 +170,40 @@ h3{
 p,
 a{
     padding-top: 10px;
+}
+
+input, select, textarea{
+    display: block;
+    margin-left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #008b8b;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.submit{
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #008b8b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #ffffff;
+    color: #008b8b;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-top: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 /*Footer*/

@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function(){
     $('#icon').click(function(){
         $('ul').toggleClass('show');
@@ -21,6 +23,6 @@ var heure = new Date().getHours();
 
 const darkMode = document.getElementById('darkmode');
 
-darkMode.addEventListener('change', (e) => {
-    document.body.classList.toggle('dark', e.target.checked);
+darkMode.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
 });
