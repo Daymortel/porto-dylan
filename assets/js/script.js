@@ -26,3 +26,16 @@ const darkMode = document.getElementById('darkmode');
 darkMode.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 });
+
+function toggle_text() {
+    var span = document.getElementById("ok");
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var title = document.getElementById("title");
+    var message = document.getElementById("message");
+    if(name.value && (email.value && /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email.value)) && title.value && message.value){
+        span.style.display = "inline";
+    }else{
+        alert("Certains champs sont manquants !");
+    }
+  }

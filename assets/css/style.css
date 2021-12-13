@@ -190,6 +190,7 @@ input, select, textarea{
     background-color: #008b8b;
     color: #ffffff;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .submit:hover{
@@ -204,6 +205,15 @@ input, select, textarea{
     margin-top: 1rem;
     margin-left: 50%;
     transform: translate(-50%);
+}
+
+#ok{
+    display: none;
+    border-radius: 20px;
+    border: solid 2px #1e8449;
+    background-color: #a9dfbf;
+    padding: 20px;
+    color: #999999;
 }
 
 /*Footer*/

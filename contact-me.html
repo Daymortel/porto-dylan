@@ -40,7 +40,8 @@
         <section id="contacts">
             <div class="box light">
                 <h2>Contacts</h2>
-                <form name="contact" action="contact-envoi" method="post" class="contact" onsubmit="">
+                <iframe name="osef" id="osef" style="display: none;"></iframe>
+                <form name="contact" id="form" action="contact-envoi" method="post" class="contact" target="osef">
                     <div>
                         <input type="text" name="name" id="name" placeholder="Nom" required>
                         <input type="email" name="email" id="email" placeholder="Email" required>
@@ -51,9 +52,10 @@
                         </select>
                         <input type="text" name="title" id="title" placeholder="Titre" required>
                         <textarea name="message" id="message" placeholder="Message" required></textarea>
-                        <input type="submit" class="submit" value="Envoyer">
+                        <input type="submit" class="submit" value="Envoyer" onclick="toggle_text();">
                     </div>
                 </form>
+                <span id="ok">Merci d'avoir demandé mes services !</span>
             </div>
         </section>
     </main>
