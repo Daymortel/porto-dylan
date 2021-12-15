@@ -22,17 +22,27 @@ setInterval("dateEtHeure()");
 var heure = new Date().getHours();
 
 const darkMode = document.getElementById('darkmode');
+const moon = document.getElementById('moon');
 
 darkMode.addEventListener('change', () => {
     document.body.classList.toggle('dark');
 });
 
+$(document).ready(function(){
+    $('#moon').click(function(){
+        $('i').toggleClass('ion-ios-sunny');
+    });
+    $('#moon').click(function(){
+        $('i').toggleClass('ion-ios-moon');
+    });
+});
+
 function toggle_text() {
-    var span = document.getElementById("ok");
-    var name = document.getElementById("name");
-    var email = document.getElementById("email");
-    var title = document.getElementById("title");
-    var message = document.getElementById("message");
+    const span = document.getElementById("ok");
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const title = document.getElementById("title");
+    const message = document.getElementById("message");
     if(name.value && (email.value && /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(email.value)) && title.value && message.value){
         span.style.display = "inline";
     }else{

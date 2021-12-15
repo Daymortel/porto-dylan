@@ -4,25 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .dark{
     background-color: #000000;
 }
-
 .dark:hover{
     transition: .5s;
 }
-
 html{
     font-family: 'Ubuntu', sans-serif;
 }
-
 /*Réutilisables*/
 .row{
     width: 80%;
     margin: auto;
 }
-
 /*Titres*/
 h1,
 h2,
@@ -33,7 +28,6 @@ a{
     text-transform: uppercase;
     text-decoration: none;
 }
-
 /*Header*/
 header{
     background-image: url(../img/fond.jpg);
@@ -43,7 +37,6 @@ header{
     background-attachment: fixed;
     height: 100vh;
 }
-
 nav{
     height: 80px;
     width: 100%;
@@ -51,49 +44,40 @@ nav{
     position: fixed;
     z-index: 1;
 }
-
 label.logo img{
     width: 70px;
     padding-top: 5px;
     border-radius: 50%;
 }
-
 nav ul{
     float: right;
     margin-right: 40px;
 }
-
 nav li{
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 20px;
     line-height: 80px;
 }
-
 nav a,
 nav li label{
     color: #dddddd;
     font-size: 18px;
-    text-transform: uppercase;
     padding: 7px 10px;
+    text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
 }
-
-a:hover,
-li label:hover{
+a:hover{
     border-bottom: 1px solid #00ffff;
     transition: .5s;
 }
-
 label a:hover,
 .social a:hover{
     border: none;
 }
-
 .check{
     display: none;
 }
-
 nav #icon{
     color: #dddddd;
     font-size: 30px;
@@ -103,18 +87,23 @@ nav #icon{
     cursor: pointer;
     display: none;
 }
-
 .name{
     color: #ffffff;
     font-size: 50px;
     padding-top: 40vh;
     padding-left: 2rem;
 }
-
 .name p{
     text-transform: none;
 }
-
+#moon{
+    font-size: 5rem;
+    position: absolute;
+}
+#moon:hover{
+    color: #ffff00;
+    transition: .5s;
+}
 /*Main*/
 .temps{
     font-family: 'Orbitron', sans-serif;
@@ -124,21 +113,18 @@ nav #icon{
     margin-top: 15px;
     margin-left: 140px;
 }
-
 #date{
     font-size: 150%;
     position: relative;
     margin-left: 2%;
     margin-top: 2%;
 }
-  
 #heure_exacte{
     font-size: 150%;
     position: relative;
     margin-left: 2%;
     margin-top: 2%;
 }
-
 .box{
     width: 80%;
     border: 2px solid #ffffff;
@@ -149,29 +135,23 @@ nav #icon{
     text-align: center;
     border-radius: 50px;
 }
-
 .light{
     background-color: #555555;
 }
-
 .dark{
     background-color: #222222;
 }
-
 h2{
     border-bottom: 1px solid #00ffff;
     padding-bottom: 5px;
 }
-
 h3{
     padding-top: 10px;
 }
-
 p,
 a{
     padding-top: 10px;
 }
-
 input, select, textarea{
     display: block;
     margin-left: 50%;
@@ -182,7 +162,6 @@ input, select, textarea{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
 .submit{
     border-radius: 50px;
     padding: 10px 20px;
@@ -192,12 +171,10 @@ input, select, textarea{
     cursor: pointer;
     margin-bottom: 30px;
 }
-
 .submit:hover{
     background-color: #ffffff;
     color: #008b8b;
 }
-
 .contact{
     display: flex;
     flex-direction: column;
@@ -206,7 +183,6 @@ input, select, textarea{
     margin-left: 50%;
     transform: translate(-50%);
 }
-
 #ok{
     display: none;
     border-radius: 20px;
@@ -215,20 +191,17 @@ input, select, textarea{
     padding: 20px;
     color: #999999;
 }
-
 /*Footer*/
 footer{
     background-color: #000033;
     height: 100px;
     margin-top: 40px;
 }
-
 .social{
     float: left;
     margin-top: 35px;
     margin-left: 40px;
 }
-
 #copy{
     color: #ffffff;
     float: right;
@@ -236,23 +209,18 @@ footer{
     margin-right: 40px;
     text-transform: uppercase;
 }
-
 .social i{
     font-size: 200%;
 }
-
 .ion-social-facebook{
     padding-right: 20px;
 }
-
 .ion-social-instagram{
 	padding-left: 20px;
 }
-
 .ion-social-facebook:hover{
     color: #3b5998;
 }
-
 .ion-social-instagram:hover{
     color: #7232bd;
 }
