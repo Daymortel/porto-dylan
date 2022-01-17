@@ -48,4 +48,46 @@ function toggle_text() {
     }else{
         alert("Certains champs sont manquants !");
     }
-  }
+}
+
+let charIndex = 0;
+const text = 'Dylan<br>BABONNEAU'; // texte à afficher
+
+function taperTexte() {
+  document.getElementById('typeText').innerHTML = text.substr(0, charIndex); // Obtenir l'endroit où va s'afficher le texte
+  charIndex++;
+}
+setInterval(taperTexte, 100); // interval de temps entre l'affichage de chaque lettre
+
+// let charIndex1 = 0;
+// let charIndex2 = 0;
+// let charIndex3 = 0;
+// let charIndex4 = 0;
+// const text1 = "Qualifications";
+// const text2 = "Connaissances";
+// const text3 = "Projets";
+// const text4 = "Contact";
+
+// function taperTexte1() {
+//     document.getElementById('typeText1').innerHTML = text1.substr(0, charIndex1);
+//     charIndex1++;
+// }
+// setInterval(taperTexte1, 100);
+
+// function taperTexte2() {
+//     document.getElementById('typeText2').innerHTML = text2.substr(0, charIndex2);
+//     charIndex2++;
+// }
+// setInterval(taperTexte2, 100);
+
+// function taperTexte3() {
+//     document.getElementById('typeText3').innerHTML = text3.substr(0, charIndex3);
+//     charIndex3++;
+// }
+// setInterval(taperTexte3, 100);
+
+// function taperTexte4() {
+//     document.getElementById('typeText4').innerHTML = text4.substr(0, charIndex4);
+//     charIndex4++;
+// }
+// setInterval(taperTexte4, 100);
