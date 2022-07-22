@@ -19,7 +19,7 @@ function dateEtHeure() {
     document.getElementById('heure_exacte').innerHTML = affichZero(infos.getHours()) + ':' + affichZero(infos.getMinutes())+ ':' + affichZero(infos.getSeconds());
 }
 setInterval("dateEtHeure()");
-var heure = new Date().getHours();
+const heure = new Date().getHours();
 
 const darkMode = document.getElementById('darkmode');
 const moon = document.getElementById('moon');

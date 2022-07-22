@@ -40,7 +40,7 @@ header{
 nav{
     height: 80px;
     width: 100%;
-    background-color: #999999;
+    background-color: #000033;
     position: fixed;
     z-index: 1;
 }
@@ -126,14 +126,10 @@ nav #icon{
     margin-top: 2%;
 }
 .box{
-    width: 80%;
-    border: 2px solid #ffffff;
+    width: 100%;
     margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
     padding: 5%;
     text-align: center;
-    border-radius: 50px;
 }
 .light{
     background-color: #555555;
@@ -195,7 +191,6 @@ input, select, textarea{
 footer{
     background-color: #000033;
     height: 100px;
-    margin-top: 40px;
 }
 .social{
     float: left;
