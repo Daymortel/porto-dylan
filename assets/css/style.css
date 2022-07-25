@@ -112,6 +112,7 @@ nav #icon{
     float: left;
     margin-top: 15px;
     margin-left: 140px;
+    width: 400px;
 }
 #date{
     font-size: 150%;
@@ -207,11 +208,18 @@ footer{
 .social i{
     font-size: 200%;
 }
+.ion-social-linkedin{
+    padding-right: 20px;
+}
 .ion-social-facebook{
+    padding-left: 20px;
     padding-right: 20px;
 }
 .ion-social-instagram{
 	padding-left: 20px;
+}
+.ion-social-linkedin:hover{
+    color: #0077b5;
 }
 .ion-social-facebook:hover{
     color: #3b5998;

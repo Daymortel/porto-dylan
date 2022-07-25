@@ -1,4 +1,4 @@
-@media screen and (max-width: 1190px){
+@media screen and (max-width: 1280px){
     nav #icon{
         display: block;
     }
@@ -62,7 +62,7 @@
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 720px){
     .name{
         font-size: 40px;
         text-align: center;
@@ -73,4 +73,10 @@
         width: 99%;
         border-radius: 40px;
     } */
+}
+
+@media screen and (max-width: 480px){
+    footer{
+        height: 350px;
+    }
 }
